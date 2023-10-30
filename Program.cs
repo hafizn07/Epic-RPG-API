@@ -2,6 +2,7 @@ global using Epic_RPG_API.Models;
 global using Epic_RPG_API.Services.CharacterService;
 global using Epic_RPG_API.Dtos.Character;
 global using AutoMapper;
+global using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
