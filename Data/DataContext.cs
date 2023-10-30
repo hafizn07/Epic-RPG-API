@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Epic_RPG_API.Data
+namespace be_rpg.Data
 {
     public class DataContext : DbContext
     {
@@ -11,7 +11,6 @@ namespace Epic_RPG_API.Data
         {
 
         }
-
         public DbSet<Character> Characters => Set<Character>();
     }
 }
