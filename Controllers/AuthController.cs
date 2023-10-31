@@ -27,5 +27,17 @@ namespace Epic_RPG_API.Controllers
 
             return Ok(response);
         }
+
+        [HttpPost("Login")]
+        public async Task<ActionResult<ServiceResponse<int>>> Login(UserLoginDto request)
+        {
+            var response = await _authRepo.Login(request.Username, request.Password);
+            if (!response.Success)
+            {
+                return BadRequest(request);
+            }
+
+            return Ok(response);
+        }
     }
 }
