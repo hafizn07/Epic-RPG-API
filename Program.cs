@@ -1,6 +1,7 @@
 global using Epic_RPG_API.Models;
 global using Epic_RPG_API.Services.CharacterService;
 global using Epic_RPG_API.Services.WeaponService;
+global using Epic_RPG_API.Services.FightService;
 global using Epic_RPG_API.Dtos.Character;
 global using Epic_RPG_API.Dtos.Weapon;
 global using Epic_RPG_API.Dtos.Skill;
