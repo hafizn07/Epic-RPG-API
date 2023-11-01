@@ -1,5 +1,6 @@
 global using Epic_RPG_API.Models;
 global using Epic_RPG_API.Services.CharacterService;
+global using Epic_RPG_API.Services.WeaponService;
 global using Epic_RPG_API.Dtos.Character;
 global using Epic_RPG_API.Dtos.Weapon;
 global using Epic_RPG_API.Dtos.Skill;
@@ -36,6 +37,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddScoped<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+builder.Services.AddScoped<IWeaponService, WeaponService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
