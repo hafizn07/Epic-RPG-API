@@ -1,6 +1,7 @@
 global using Epic_RPG_API.Models;
 global using Epic_RPG_API.Services.CharacterService;
 global using Epic_RPG_API.Dtos.Character;
+global using Epic_RPG_API.Dtos.Weapon;
 global using AutoMapper;
 global using Microsoft.EntityFrameworkCore;
 global using be_rpg.Data;
