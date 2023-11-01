@@ -55,5 +55,12 @@ namespace Epic_RPG_API.Controllers
             }
             return Ok(response);
         }
+
+        [HttpPost("Skill")]
+        public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> AddCharacterSkill(
+            AddCharacterSkillDto newCharacterSkill)
+        {
+            return Ok(await _characterService.AddCharacterSkill(newCharacterSkill));
+        }
     }
 }
