@@ -137,7 +137,7 @@ Users can obtain an access token by logging in via the `/api/Auth/Login` endpoin
 
 Here are some of the key commits that contributed to the development of the API:
 
-- [Epic-RPG-API commits]('https://github.com/hafizmp/Epic-RPG-API/commits/main') - Find commits by clicking here.
+- Find commits by clicking here - [Epic-RPG-API commits](https://github.com/hafizmp/Epic-RPG-API/commits/main)
 
 ## Contributing
 
